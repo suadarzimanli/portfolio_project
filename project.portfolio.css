@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+header {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+  top: 0;
+  position: sticky;
+}
+html {
+  scroll-behavior: smooth;
+}
+ul {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+}
+ul li a {
+  text-decoration: none;
+  margin: 20px;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+ul li a:hover {
+  color: #facf0f;
+  transition: all 0.5s;
+}
+
+.logo a {
+  color: #333333;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+}
+.logo a:hover {
+  color: #facf0f;
+  transition: all 0.5s;
+}
+#home {
+  background-image: url(background.jpg);
+  background-size: cover;
+  height: 60vh;
+  text-align: center;
+  padding: 10%;
+  color: #111111;
+  font-size: 40px;
+}
+#home h2 {
+  font-size: 60px;
+  font-weight: 1200;
+}
+#home p {
+  font-size: 17.92px;
+  font-weight: 500;
+}
+
+.projectbtn{
+  text-decoration: none;
+  font-size: 22px;
+  color: #333;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.clik {
+  border: none;
+  border-radius: 20px;
+  background-color: #facf0f;
+  padding: 13.44px 71.68px;
+  color: black;
+  border-radius: 2px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 17.92px;
+  /* border: 1px solid magenta; */
+  transition: all 1.2s; /* deyisiklikleri yavaslat */
+}
+.clik:hover {
+  border: none;
+  background-color: chartreuse;
+  /* padding-left:200px;
+ margin-left:200px */
+}
+
+.anime {
+  position: absolute;
+  margin-left: 39%;
+  margin-top: 90px;
+}
+.mouse {
+  width: 15px;
+  height: 30px;
+  border: 4px solid #333;
+  border-radius: 60px;
+}
+.mouse::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 15px;
+  background: #333;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  opacity: 1;
+  animation: mouse 2s infinite;
+}
+@keyframes mouse {
+  from {
+    opacity: 1;
+    top: 10px;
+  }
+  to {
+    opacity: 0;
+    top: 30px;
+  }
+}
+#about {
+  height: 120vh;
+  justify-content: center;
+  text-align: center;
+  padding-top: 100px;
+  background-color: white;
+}
+.contactbtn{
+  text-decoration: none;
+  font-size: 22px;
+  color: #333;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#about p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 17.92px;
+  font-weight: 500;
+}
+#about .line {
+  background-color: #facf0f;
+  width: 20%;
+  height: 7px;
+  border-radius: 20px;
+  border: none;
+  margin-left: 40%;
+}
+#about .box {
+  display: inline-block;
+  text-align: left;
+  width: 600px;
+  height: 700px;
+  padding-top: 100px;
+}
+#about .box,
+.skills {
+  vertical-align: top;
+  margin-left: 30px;
+}
+span {
+  background-color: #99999933;
+  font-size: 20px;
+  color: #666666;
+  border-radius: 4px;
+  margin: 5px;
+  font-weight: 500;
+  padding: 5px 20px;
+}
+#about .contact {
+  border: none;
+  border-radius: 20px;
+  background-color: #facf0f;
+  padding: 13.44px 71.68px;
+  color: black;
+  border-radius: 2px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 17.92px;
+  transition: all 0.5s;
+}
+#about .contact:hover {
+  border: none;
+  background-color: chartreuse;
+}
+
+#projects {
+  background-image: url(background.2.jpg);
+  height: 150vh;
+  text-align: center;
+  padding-top: 70px;
+}
+
+#projects .line2 {
+  background-color: #facf0f;
+  width: 20%;
+  height: 7px;
+  border-radius: 20px;
+  border: none;
+  margin-left: 40%;
+}
+
+#projects p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 17.92px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+#projects .box {
+  display: inline-block;
+  text-align: left;
+  width: 600px;
+  height: 500px;
+  margin-top: 100px;
+}
+#projects img {
+  width: 500px;
+  height: 300px;
+  display: inline-block;
+}
+#projects .box,
+.about-pr {
+  width: 500px;
+  padding: 20px;
+  vertical-align: top;
+}
+#projects .live {
+  border: none;
+  border-radius: 20px;
+  background-color: #facf0f;
+  padding: 13.44px 71.68px;
+  color: black;
+  border-radius: 2px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 17.92px;
+  transition: all 0.8s;
+}
+#projects .live:hover {
+  border: none;
+  background-color: chartreuse;
+}
+#contact {
+  height: 180vh;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  background-size: cover;
+  padding-top: 80px;
+}
+#contact .line3 {
+  background-color: #facf0f;
+  width: 20%;
+  height: 7px;
+  border-radius: 20px;
+  border: none;
+  margin-left: 40%;
+}
+form {
+  text-align: left;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: whitesmoke;
+  width: 800px;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.submit {
+  border: none;
+  background-color: red;
+  padding: 10px 65px;
+  color: #333;
+  border-radius: 15px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 17.92px;
+  transition: all 1.2s;
+  display: block;
+  margin-left: 280px;
+}
+.submit:hover {
+  border: none;
+  background-color: chartreuse;
+}
+input,
+textarea {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  padding: 15px;
+  border: none;
+  border-radius: 15px;
+  background-color: #99999933;
+  font-weight: 600;
+  font-size: 16px;
+}
+label {
+  margin: 0 auto;
+  width: 50%;
+  display: block;
+  padding-top: 30px;
+  color: #666666;
+  font-weight: 600;
+}
+.textarea {
+  resize: none;
+}
+footer {
+  background-color: black;
+  color: white;
+  height: 350px;
+  padding-left: 20px;
+  width: auto;
+}
+footer .boxx {
+  display: inline-block;
+  text-align: left;
+  width: 420px;
+  height: 80px;
+  vertical-align: top;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+.icons {
+  font-size: 20px;
+  color: #f1f1f1;
+  padding: 10px;
+}
+@media screen  and (max-width: 468px){
+
+ul{
+  display: none;
+}
+
+  
+}
